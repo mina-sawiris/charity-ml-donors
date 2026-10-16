@@ -1,0 +1,65 @@
+{
+  "form_fields": {
+    "age": "age",
+    "education_num": "education-num",
+    "capital_gain": "capital-gain",
+    "capital_loss": "capital-loss",
+    "marital_status": "marital-status_Married-civ-spouse"
+  },
+  "ranges": {
+    "age": [
+      17,
+      100
+    ],
+    "education_num": [
+      1,
+      16
+    ],
+    "capital_gain": [
+      0,
+      99999
+    ],
+    "capital_loss": [
+      0,
+      5000
+    ]
+  },
+  "marital_status_options": [
+    "Single",
+    "Married"
+  ],
+  "scaled_columns": [
+    "age",
+    "education-num",
+    "capital-gain",
+    "capital-loss"
+  ],
+  "scaler_min": {
+    "age": 17.0,
+    "education-num": 1.0,
+    "capital-gain": 0.0,
+    "capital-loss": 0.0
+  },
+  "scaler_max": {
+    "age": 90.0,
+    "education-num": 16.0,
+    "capital-gain": 11.5129,
+    "capital-loss": 8.3795
+  },
+  "model_features": {
+    "AdaBoost ": [
+      "capital-gain",
+      "marital-status_ Married-civ-spouse",
+      "education-num",
+      "age",
+      "capital-loss"
+    ],
+    "Gradient Boosting ": [
+      "marital-status_ Married-civ-spouse",
+      "education-num",
+      "capital-gain",
+      "capital-loss",
+      "age"
+    ]
+  }
+}

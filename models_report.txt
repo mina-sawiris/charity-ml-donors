@@ -1,0 +1,39 @@
+=========================================================
+CharityML - Unified Model Comparison Report
+=========================================================
+
+1. Model Overview:
+------------------
+This report compares the performance of two different ensemble models trained by our team: 
+- Model A: AdaBoostClassifier (Mina)
+- Model B: GradientBoostingClassifier (Heba)
+
+Both models were evaluated on the full dataset (103 features) and a simplified, reduced dataset to optimize the final web application.
+
+2. The Consensus Features:
+--------------------------
+While the two algorithms assigned slightly different internal weights, both models independently identified the exact same Top 5 most predictive features for determining income. We will use these 5 features for our HTML form:
+
+- capital-gain (Numerical)
+- capital-loss (Numerical)
+- age (Numerical)
+- education-num (Numerical)
+- marital-status_Married-civ-spouse (Categorical: Married/Single)
+
+3. Performance Comparison:
+--------------------------
+--- AdaBoost (Model A) ---
+Full Data    -> Accuracy: 0.8499 (84.99%) | F-score: 0.7133
+Reduced Data -> Accuracy: 0.8472 (84.72%) | F-score: 0.7074
+*Note: Maintained excellent performance, dropping only ~0.27% in accuracy.*
+
+--- Gradient Boosting (Model B) ---
+Full Data    -> Accuracy: 0.8695 (86.95%) | F-score: 0.7503
+Reduced Data -> Accuracy: 0.8583 (85.83%) | F-score: 0.7245
+*Note: Scored higher overall, dropping ~1.12% in accuracy when reduced.*
+
+4. Conclusion & Recommendation:
+-------------------------------
+Both models successfully proved that we can reduce our web application's input form from 103 fields down to just 5 questions while maintaining over 84% accuracy. 
+We will deploy the two models and compare the result in the flask application.
+=========================================================

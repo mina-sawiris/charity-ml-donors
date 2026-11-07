@@ -5,7 +5,7 @@ so a charity can prioritise outreach to likely donors. It serves two models trai
 the *Finding Donors for CharityML* project (AdaBoost and Gradient Boosting) and shows
 both predictions side by side.
 
-**Live demo:** _add your Render link here_
+**Live demo:** [PythonAnyWhere](https://charitymldonors.pythonanywhere.com/)
 
 ## How it works
 
